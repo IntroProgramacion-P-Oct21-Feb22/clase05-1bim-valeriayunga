@@ -27,13 +27,16 @@ public class Ejemplo01 {
         double extension;
         
         System.out.println("Ingrese nombre del país");
-        nombrePais = entrada.nextLine();
+        nombrePais = entrada.nextLine();  //nextLine para cadenas
         
         System.out.println("Ingrese la población del país");
-        extension = entrada.nextDouble();
+        extension = entrada.nextDouble(); //nextDouble para datos numéricos 
+        
+        entrada.nextLine(); // limpieza de buffer, tambíen se 
+        //puede ubicar los datos numéricos al final//
         
         System.out.println("Ingrese capital del país");
-        capitalPais = entrada.nextLine();
+        capitalPais = entrada.nextLine(); 
         
         System.out.printf("Datos de país\n\tNombre:%s\n\tCapital:%s"
                 + "\n\tPoblación:%.2f\n", nombrePais, capitalPais, extension);

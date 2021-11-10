@@ -31,16 +31,19 @@ public class Ejemplo {
         
         double gradosCentigrados;
         double gradosFarenheit;
-        double gradosKelvin;
+        double gradosKelvin = 0;
         
         System.out.println("Ingrese el valor de grados centı́grados");
         gradosCentigrados = entrada.nextDouble();
         
-        if (gradosCentigrados>=0){
+        if (gradosCentigrados>0 && gradosCentigrados <=100) {
             gradosFarenheit = (9/5.0) * gradosCentigrados + 32;
            
             System.out.printf("Valor en grados Farenheit %.2f\n", 
                     gradosFarenheit);
+            
+            System.out.printf("Valor en grados Kelvin %.2f\n", 
+                    gradosKelvin);
            
         } else {
             System.out.printf("Valor %.2f en grados centígrados, está fuera"
